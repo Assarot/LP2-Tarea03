@@ -36,6 +36,7 @@ public class Rol {
 	private char estado;
 	
 	@ManyToMany(mappedBy = "roles")
+	@JsonIgnore
 	private Set<Usuario> usuarios;
 	
 	@ManyToMany

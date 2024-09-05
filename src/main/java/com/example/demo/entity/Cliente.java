@@ -2,6 +2,8 @@ package com.example.demo.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,5 +35,6 @@ public class Cliente {
 	private String fecha_nacimiento;
 	
 	@OneToMany(mappedBy = "cliente")
+	@JsonIgnore
 	private List<Renta> rentas;
 }
