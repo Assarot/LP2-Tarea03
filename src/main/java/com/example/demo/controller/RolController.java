@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 
 
+
 @RestController
 @RequestMapping("api/roles")
 public class RolController {
@@ -53,7 +54,7 @@ public class RolController {
 			// TODO: handle exception
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-	}
+	}	
 	
 	@PostMapping
 	public ResponseEntity<Rol> create(@Valid @RequestBody Rol ro) {
