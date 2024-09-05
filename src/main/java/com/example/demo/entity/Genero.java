@@ -28,6 +28,6 @@ public class Genero {
 	@Column(name = "nombre")
 	private String nombre;
 	
-	@OneToMany(mappedBy = "Genero")
+	@OneToMany(mappedBy = "genero")
 	private List<Pelicula> peliculas;
 }

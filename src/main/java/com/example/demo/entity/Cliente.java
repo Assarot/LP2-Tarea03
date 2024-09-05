@@ -32,6 +32,6 @@ public class Cliente {
 	@Column(name = "fecha_nacimiento")
 	private String fecha_nacimiento;
 	
-	@OneToMany(mappedBy = "Cliente")
+	@OneToMany(mappedBy = "cliente")
 	private List<Renta> rentas;
 }

@@ -34,7 +34,7 @@ public class Pelicula {
 	@Column(name = "director")
 	private String director;
 	
-	@OneToMany(mappedBy = "Pelicula")
+	@OneToMany(mappedBy = "pelicula")
 	private List<Renta> rentas;
 	
 	@ManyToOne
